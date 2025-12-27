@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register | ProjectHub</title>
+  <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>Create Account 🧑‍💻</h2>
+    <p>Join ProjectHub and start showcasing your projects!</p>
+
+    <!-- IMPORTANT: onsubmit -->
+    <form onsubmit="event.preventDefault(); registerUser();">
+      <input type="text" id="name" placeholder="Full Name" required>
+      <input type="email" id="email" placeholder="Email Address" required>
+      <input type="password" id="password" placeholder="Create Password" required>
+      <input type="password" id="confirm" placeholder="Confirm Password" required>
+
+      <button type="submit">Register</button>
+    </form>
+
+    <div class="links">
+      <p>Already have an account? <a href="login.html">Login here</a></p>
+      <p><a href="index.html">← Back to Home</a></p>
+    </div>
+  </div>
+
+  <!-- JS MUST BE HERE -->
+  <script src="js/auth.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+/* ===== Upload Page Dark Neon Style ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #0d1117;
+  background-image: radial-gradient(circle at 20% 20%, rgba(0,255,240,0.05), transparent 40%),
+                    radial-gradient(circle at 80% 80%, rgba(255,122,255,0.05), transparent 40%);
+  background-attachment: fixed;
+  color: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* ===== Container ===== */
+.container {
+  background: linear-gradient(145deg, #101726, #1a2236);
+  padding: 40px;
+  width: 450px;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(0,255,240,0.08);
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+h2 {
+  text-align: center;
+  color: #00fff0;
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-shadow: 0 0 8px rgba(0,255,240,0.5);
+}
+
+/* ===== Form Elements ===== */
+label {
+  display: block;
+  margin-bottom: 6px;
+  color: #c5c5c5;
+  font-weight: 500;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid rgba(255,255,255,0.1);
+  background-color: #0d1117;
+  color: #e0e0e0;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #00fff0;
+  box-shadow: 0 0 8px rgba(0,255,240,0.3);
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+}
+
+/* ===== Button ===== */
+button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(90deg, #00fff0, #00c8ff);
+  color: #0d1117;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(0,255,240,0.3);
+}
+
+button:hover {
+  background: linear-gradient(90deg, #00e5ff, #00ffa3);
+  transform: translateY(-2px);
+  box-shadow: 0 0 25px rgba(0,255,240,0.5);
+}
+
+/* ===== Links ===== */
+.links {
+  text-align: center;
+  margin-top: 15px;
+  
+}
+
+.links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: text-shadow 0.3s ease;
+}
+
+.links a:hover {
+    color: #dc389a;
+  text-shadow: 0 0 8px #ff7aff;
+  
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 480px) {
+  .container {
+    width: 90%;
+    padding: 30px;
+  }
+}

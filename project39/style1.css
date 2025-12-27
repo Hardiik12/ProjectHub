@@ -1,0 +1,225 @@
+/* ===== Global Styles ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #e0e0e0;
+  background-color: #0d1117;
+  background-image: radial-gradient(circle at 20% 20%, rgba(0,255,240,0.05), transparent 40%),
+                    radial-gradient(circle at 80% 80%, rgba(255,122,255,0.05), transparent 40%);
+  background-attachment: fixed;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(20, 30, 48, 0.95);
+  backdrop-filter: blur(8px);
+  color: #fff;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 0 20px rgba(0, 255, 240, 0.2);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.navbar h1 {
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #00fff0;
+  letter-spacing: 1px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar a {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #ff7aff;
+  text-shadow: 0 0 10px #ff7aff;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  text-align: center;
+  padding: 6rem 2rem;
+  background: linear-gradient(135deg, #141e30, #243b55);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(from 90deg at 50% 50%, #00fff0, #ff7aff, #00fff0);
+  opacity: 0.07;
+  animation: rotate 15s linear infinite;
+  z-index: 0;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.hero h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  max-width: 650px;
+  margin: 0 auto 2.5rem;
+  opacity: 0.9;
+  position: relative;
+  z-index: 1;
+}
+
+/* ===== Buttons ===== */
+.btn {
+  display: inline-block;
+  padding: 0.9rem 1.8rem;
+  margin: 0.4rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #00fff0, #00c8ff);
+  color: #0d1117;
+  box-shadow: 0 0 15px rgba(0, 255, 240, 0.4);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(90deg, #00e5ff, #00ffa3);
+  transform: translateY(-3px);
+  box-shadow: 0 0 25px rgba(0, 255, 240, 0.6);
+}
+
+.btn-outline {
+  border: 2px solid #00fff0;
+  color: #00fff0;
+}
+
+.btn-outline:hover {
+  background-color: #00fff0;
+  color: #0d1117;
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px rgba(0,255,240,0.5);
+}
+
+/* ===== Features Section ===== */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 4rem 2rem;
+  background-color: #0d1117;
+}
+
+.feature-card {
+  background: linear-gradient(145deg, #101726, #1a2236);
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(255,255,255,0.05);
+  position: relative;
+  overflow: hidden;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 20px rgba(0,255,240,0.15);
+}
+
+.feature-card h3 {
+  font-size: 1.3rem;
+  color: #00fff0;
+  margin-bottom: 1rem;
+}
+
+.feature-card p {
+  font-size: 1rem;
+  color: #c5c5c5;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 1.8rem;
+  background: linear-gradient(90deg, #141e30, #243b55);
+  color: #a9a9b3;
+  font-size: 0.95rem;
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .hero h2 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+}
+
+body {
+  animation: fadeIn 0.8s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== Custom Scrollbar ===== */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0d1117;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#00fff0, #ff7aff);
+  border-radius: 10px;
+}

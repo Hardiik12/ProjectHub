@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Profile | ProjectHub</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <h1>ProjectHub</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="explore.html">Explore</a></li>
+      <li><a href="upload.html">Upload</a></li>
+      <li><a href="login.html">Logout</a></li>
+    </ul>
+  </nav>
+
+  <!-- Profile Header -->
+  <section class="profile-header">
+    <img src="images/img1.jpeg" alt="Profile Picture" class="profile-img">
+
+    <h2 class="profile-name">Hardik Gupta</h2>
+    <p class="profile-role">Frontend Developer | K L University</p>
+
+    <p class="bio">
+      Passionate about building beautiful and functional web apps using HTML, CSS, and JavaScript.
+      Always learning and exploring new technologies to create innovative solutions.
+    </p>
+
+    <div class="contact-links">
+      <a href="#">🌐 Portfolio</a>
+      <a href="#">💼 LinkedIn</a>
+      <a href="#">📧 Email</a>
+    </div>
+  </section>
+
+  <!-- Projects Section (IMPORTANT PART) -->
+  <section class="project-section">
+    <h2>My Projects 💻</h2>
+
+    <!-- ✅ JS WILL INJECT PROJECT CARDS HERE -->
+    <div class="project-grid" id="projectGrid"></div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 ProjectHub | Built for FEDF Skill Development Project (K L University)
+  </footer>
+
+  <!-- JavaScript (VERY IMPORTANT: AT BOTTOM) -->
+  <script src="js/profile.js"></script>
+
+</body>
+</html>

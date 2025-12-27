@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | ProjectHub</title>
+  <link rel="stylesheet" href="style4.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h2>Welcome Back 👋</h2>
+    <p>Login to continue to ProjectHub</p>
+
+<form onsubmit="event.preventDefault(); loginUser();">
+  <input type="email" id="email" placeholder="Enter your email" required>
+  <input type="password" id="password" placeholder="Enter your password" required>
+  <button type="submit">Login</button>
+</form>
+
+    <div class="links">
+      <p>Don't have an account? <a href="register.html">Register here</a></p>
+      <p><a href="index.html">← Back to Home</a></p>
+    </div>
+  </div>
+
+<script src="js/auth.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add New Project | ProjectHub</title>
+  <link rel="stylesheet" href="upload-style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>🧑‍💻 Add New Project</h2>
+    <form>
+      <label for="title">Project Title</label>
+      <input type="text" id="title" placeholder="Enter your project title" required>
+
+      <label for="author">Author Name</label>
+      <input type="text" id="author" placeholder="Enter your name" required>
+
+      <label for="tech">Technology Stack</label>
+      <select id="tech" required>
+        <option value="">Select Tech Stack</option>
+        <option>HTML, CSS</option>
+        <option>ReactJS</option>
+        <option>NodeJS</option>
+        <option>Python / Flask</option>
+        <option>Java / Spring Boot</option>
+        <option>Other</option>
+      </select>
+
+      <label for="desc">Project Description</label>
+      <textarea id="desc" placeholder="Write a short description about your project..." required></textarea>
+
+      <label for="img">Project Image URL</label>
+      <input type="url" id="img" placeholder="Paste an image link (optional)">
+
+      <button type="submit">Upload Project</button>
+    </form>
+
+    <div class="links">
+      <p><a href="explore.html">← Back to Explore Page</a></p>
+    </div>
+  </div>
+
+  <script src="js/upload.js"></script>
+
+</body>
+</html>
